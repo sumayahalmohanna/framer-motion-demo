@@ -11,7 +11,6 @@ const containerVariants = {
     transition: {delay: .3, duration: .5}
   },
   exit: {
-    backgroundColor: 'grey',
     opacity: 0,
   }
 

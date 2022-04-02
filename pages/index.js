@@ -2,6 +2,18 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import { motion } from 'framer-motion'
 
+const buttonVariants = {
+  hover: {
+    scale: 1.1,
+    textShadow: "0px 0px 8px rgb(255,255,255)",
+    boxShadow: "0px 0px 8px rgb(255,255,255)",
+    transition: {
+      duration: 0.5,
+      repeat: Infinity
+    }
+  }
+}
+
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -12,21 +24,24 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        
-        <div>
+ 
         <motion.h1 className={styles.title}
         initial={{opacity: 0}}
         animate={{opacity: 1}}
-        transition={{delay: .8, duration: 1.5}}
-        whileHover={{scale: 1.1, transition: {yoyo: Infinity}}}
+        transition={{duration: .3,}}
+        whileHover={{scale: 1.1}}
         >
           Framer-Motion Basics
         </motion.h1>
-
         <p className={styles.description}>
           Testing the Framer-Motion Library
         </p>
-        </div>
+        <motion.button className='button'
+          variants={buttonVariants}
+          whileHover='hover'
+        >
+          Click me
+        </motion.button>
         
       </main>
     </div>
