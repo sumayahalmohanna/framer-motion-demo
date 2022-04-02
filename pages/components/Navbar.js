@@ -7,8 +7,8 @@ const Navbar = () => {
             initial={{y: -300}}
             animate={{y: 0}}
         >
-            <Link href='/'><button className="navBtn">Home</button></Link>
-            <Link href='/progress-bar'><button className="navBtn">Progress Bar</button></Link>
+            <Link href='/' passHref><button className="navBtn">Home</button></Link>
+            <Link href='/ProgressBar' passHref><button className="navBtn">Progress Bar</button></Link>
         </motion.div>
      );
 }

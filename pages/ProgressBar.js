@@ -7,9 +7,9 @@ import {
 } from "framer-motion";
 import styles from "../styles/Home.module.css";
 import { AnimatePresence } from 'framer-motion'
-import { ContentPlaceholder } from "./components/ContentPlaceholder";
+import ContentPlaceholder from "./components/ContentPlaceholder";
 
-export const CircleIndicator = () => {
+const CircleIndicator = () => {
   const [isComplete, setIsComplete] = useState(false);
   const { scrollYProgress } = useViewportScroll();
   const yRange = useTransform(scrollYProgress, [0, 0.9], [0, 1]);
@@ -46,7 +46,7 @@ export const CircleIndicator = () => {
   );
 };
 
-export const LineIndicator = () => {
+const LineIndicator = () => {
   const [isComplete, setIsComplete] = useState(false);
   const { scrollYProgress } = useViewportScroll();
   const yRange = useTransform(scrollYProgress, [0, 0.9], [0, 1]);
@@ -69,7 +69,7 @@ export const LineIndicator = () => {
   );
 };
 
-export const ComplexIndicator = () => {
+const ComplexIndicator = () => {
   const [isComplete, setIsComplete] = useState(false);
   const { scrollYProgress } = useViewportScroll();
   const yRange = useTransform(scrollYProgress, [0, 0.9], [0, 1]);
@@ -114,7 +114,7 @@ const ProgressBar = () => {
     >
       <div className={styles.grid}>
       <h1><br/>Start Scrolling &darr;</h1>
-        <ContentPlaceholder/>
+      <ContentPlaceholder />
         <CircleIndicator />
         <LineIndicator />
         <ComplexIndicator/>
