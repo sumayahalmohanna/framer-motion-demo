@@ -7,7 +7,7 @@ import {
 } from "framer-motion";
 import styles from "../styles/Home.module.css";
 import { AnimatePresence } from 'framer-motion'
-import ContentPlaceholder from "./components/ContentPlaceholder";
+import ContentPlaceholder from "../components/ContentPlaceholder";
 
 const CircleIndicator = () => {
   const [isComplete, setIsComplete] = useState(false);

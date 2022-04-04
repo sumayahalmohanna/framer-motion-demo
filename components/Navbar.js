@@ -9,6 +9,7 @@ const Navbar = () => {
         >
             <Link href='/' passHref><button className="navBtn">Home</button></Link>
             <Link href='/ProgressBar' passHref><button className="navBtn">Progress Bar</button></Link>
+            <Link href='/ButtonsAndComponents' passHref><button className="navBtn">Buttons & Components</button></Link>
         </motion.div>
      );
 }

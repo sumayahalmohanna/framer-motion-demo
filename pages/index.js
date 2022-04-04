@@ -1,18 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import { motion } from 'framer-motion'
-
-const buttonVariants = {
-  hover: {
-    scale: 1.1,
-    textShadow: "0px 0px 8px rgb(255,255,255)",
-    boxShadow: "0px 0px 8px rgb(255,255,255)",
-    transition: {
-      duration: 0.5,
-      repeat: Infinity
-    }
-  }
-}
+//import Card from "https://framer.com/m/Card-TCkD.js@pgEcVYx4vXEgWAdidD8x"
 
 export default function Home() {
   return (
@@ -36,12 +25,8 @@ export default function Home() {
         <p className={styles.description}>
           Testing the Framer-Motion Library
         </p>
-        <motion.button className='button'
-          variants={buttonVariants}
-          whileHover='hover'
-        >
-          Click me
-        </motion.button>
+
+        {/* <Card /> */}
         
       </main>
     </div>
