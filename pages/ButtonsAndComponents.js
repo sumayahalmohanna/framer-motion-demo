@@ -36,13 +36,7 @@ const ButtonsAndComponents = () => {
           </motion.button>
             {showGreeting && (
                 <AnimatePresence>
-              <motion.div className={styles.card}
-              initial={{x: 1000}}
-              animate={{x:0}}
-              transition={{duration: .2,}}
-              exit={{x: -1000}}>
-                <Greeting />
-              </motion.div>
+                  <Greeting key='hello'/>
               </AnimatePresence>
             )}
           </div>
